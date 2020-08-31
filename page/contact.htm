@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<title>Curriculum CGM</title>
+	<meta charset="utd-8">
+	<meta name="curriculum" content="curriculum">
+	<meta name="autor" content="Carlos Guerao Martinez">
+	<meta name="desing" content="Enar Tabares Rodrigez">
+	<meta name="keywords" content="online, curriculum">
+	<link href="../styleContent/style_template.css" rel="stylesheet" type"text/css" />
+	<link href="../styleContent/style_contact.css" rel="stylesheet" type"text/css" />
+</head>
+
+<body>
+	<header>
+		<div id="menu"> <!-- Menu for laptops -->
+			<ul>
+				<li class="dropdown">
+					<a href="../index.htm">Curriculum</a>
+				</li>
+				<li class="dropdown">
+					<a href="project_finish.htm">Projects</a>
+					<div class="dropdown_content">
+						<a href="project_finish.htm">old projects</a>
+						<a href="#">Ongoing projects</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div id="logo">
+			<h1> <a href="#"> Contact </a> </h1>
+		</div>
+		<div id="menu_mobile"> <!-- Menu for mobiles -->
+			<ul>
+				<li class="dropdown">
+					<div class="sub_menu_mobile"><a></a>
+						<div class = "dropdown_content">
+							<a href="../index.htm">Curriculum</a>
+							<a href="project_finish.htm">Projects</a>
+							<a href="contact.htm">contact</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class ="container">
+		<form action="../php/php_contact.php" method="post">
+			<label for="fname">First Name </label>
+			<input type="text" id="fname" name="fname" placeholder="Your name" size="30" required>
+			<label for="lname">Last Name </label>
+			<input type="text" id="lname" name="lname" placeholder="Your last name"  size="30" >
+			<label for="email">Email </label>
+			<input type="email" id="email" name="email" placeholder="Your email" required>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject"placeholder="Text" required></textarea>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</div>
+		<br><br>
+	<!--<footer>
+		<div id="menu_footer">
+			<ul >
+				<li>
+					<a href=""> copyright</a>
+				</li>
+			</ul>
+		</div>
+	</footer>-->
+</body>
+
+</html>

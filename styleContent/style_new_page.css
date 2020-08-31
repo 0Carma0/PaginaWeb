@@ -1,0 +1,202 @@
+
+html{
+	background:#000000;
+	margin:0;
+	padding:0;
+}
+body{
+	width:auto;
+	height: 100%;
+	background:#000000;
+	margin:0 auto; /*sup inf a cero izq y der centrado*/
+	font-family:  Grovemade, helvetica,Verdana, Geneva, sans-serif;
+	font-size: 15px;
+	color:#b3b3b3;
+}
+p, h1, h2, h3{
+	margin:0;
+	padding:0;
+	font-family: Grovemade ,helvetica,sans-serif,Verdana;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  margin: 0px 20px 0px 20px;
+}
+.flex-container > div {
+  width: 100%;
+}
+/* Seccion información Telefono y correo*/
+.info-container{
+	background-color: #80ffbf;
+  text-align: justify;
+  font-size: 15px;
+  color: #000000;
+}
+.info-container > div {
+	margin: 0px 20px 0px 20px;
+}
+.info-container > div > img{
+  margin: auto;
+}
+.info-container > div > p{
+   margin: 0px 50px 0px 0px;
+   display: inline;
+   font-weight: bold;
+   padding: 10px;
+}
+.info-container{
+	background-color: #80ffbf;
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
+}
+/*Sección Logo Menú*/
+.menu-container{
+	background-color: #555555;
+	text-align: right;
+	padding: 40px 100px 0px 0px;
+}
+.logo-container{
+	background-color: #555555;
+	text-align: left;
+	padding: 0px 0px 0px 80px;
+}
+/* Sección Entradilla*/
+.entradilla-container{
+	background-image: url("../Imagenes/Icons/gym.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: white;
+	padding: 10px;
+	background-size: cover;
+}
+.entradilla-container > p{
+	color: #FFFFFF;
+	font-size: 25px;
+	padding: 10px 0px 50px 0px;
+	max-width: 50%;
+}
+.entradilla-text-title{
+	color: #FFFFFF;
+	font-size: 100px;
+	padding: 00px 0px 50px 0px;
+	max-width: 70%;
+}
+.entradilla-text-subTitle {
+	
+}
+.entradilla-text-subTitle > p{
+	font-family: Geneva;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;	
+	margin: 20px;
+}
+
+/*Sección Explicación*/
+.explicacion-container {
+	text-align: left;
+	background-color: #BBBBBB;
+	
+}
+.explicacion-container > p, h1 {
+	margin: 5% 10% 2% 10%;
+	color: #000000;
+	text-align: left;
+	
+}
+.explicacion-container > p {
+	font-size: 20px;
+	line-height: 300%;
+}
+/* Contacta*/
+.contacta-container{
+	text-align: center;
+	background-color: #80e5ff;
+}
+.contacta-container > p, h1{
+	margin: 5% 10% 2% 10%;
+	color: white;
+	text-align: justify;
+	max-width: 60%;
+}
+label{
+	color: white;	
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+}
+input[type=text],input[type=email], select, textarea {
+	width: 50%;
+	padding: 12px;
+	border: 0px solid #ccc; 
+	border-radius: 4px;
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	border-bottom: 1px solid gray;
+	text-align: center;
+	color: black;
+	background-color: #80e5ff;
+}
+textarea{
+	color:black;
+	height:200px; 
+	overflow-height: auto;
+	text-align: center;
+	background-color: #99ebff;
+
+}
+input[type=submit] {
+	background-color: #4CAF50;
+	color: black;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+/*Sección servicios*/
+
+.servicios-cntainer{
+	background-color: white;
+	text-align: center;
+}
+.servicios-cntainer > div{
+	margin: 8px 4px;
+
+}
+.servicios-cntainer > div > button{
+  border: none;
+  color: white;
+  padding: 25px 64px;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: black;
+  width: 50%;
+}
+.servicios-cntainer > div > .cont{
+	opacity: 0;
+  transition-duration: 1s;
+  height: 0px;
+  display: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
